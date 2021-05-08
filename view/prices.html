@@ -1,0 +1,18 @@
+<div class="prices-content">
+    <div class="">
+        <div class="prices-title" ng-repeat="plan in plans track by $index">{{::plan.plan | adjustPlan}}</div>
+        <div class="prices-title">Normal</div>
+    </div>
+    <div class="prices-box">
+        <div class="prices-value" ng-repeat="plan in plans track by $index">
+            <span class="prices-value-small">{{(plan.time | calculate:minutes:rate) | adjustPrice:1}}</span>
+            <span class="prices-value-big">{{(plan.time | calculate:minutes:rate) | adjustPrice:2}}</span>
+            <span class="prices-value-small">{{(plan.time | calculate:minutes:rate) | adjustPrice:3}}</span>
+        </div>
+        <div class="prices-value">
+            <span class="prices-value-small">{{("-" | calculate:minutes:rate) | adjustPrice:1}}</span>
+            <span class="prices-value-big">{{("-" | calculate:minutes:rate) | adjustPrice:2}}</span>
+            <span class="prices-value-small">{{("-" | calculate:minutes:rate) | adjustPrice:3}}</span>
+        </div>
+    </div>
+</div>

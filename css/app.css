@@ -1,0 +1,208 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(61,70,77,1);
+    background-color: #FFFFFF;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.loading {
+	width: 100%;
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+.fa-spinner {
+	font-size: 65px;
+}
+
+.ng-hide-add-active {
+  display: block!important;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+}
+
+.ng-hide-remove-active {
+  display: block!important;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.ng-hide {
+  opacity: 0;
+}
+
+.table-striped {
+    background-color: rgba(00,00,00,0.07);
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(00,00,00,0.05);
+}
+
+.wrapper {
+	width: 75vw;
+	text-align: center;
+	margin: auto;
+}
+
+.wrapper h1 {
+	font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.header {
+    /*width: 100%;*/
+    /*height: 50px;*/
+    /*margin: auto;*/
+}
+
+.header-logo {
+    width: 240px;
+    height: 136px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.header-logo-img {
+    float: left;
+}
+
+.header-logo-img-attr {
+    width: 120px;
+    height: 36px;
+}
+
+.header-logo-fale {
+    float: left;
+    font-size: 2.7em;
+    margin-top: -11px;
+    margin-left: 15px;
+}
+
+.header-logo-fale-mais {
+    float: right;
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: -2px;
+    color: rgba(00,00,00,0.5);
+}
+
+.header-logo-fale-mais-2 {
+    float: right;
+    font-size: 19px;
+    margin-top: -11px;
+    margin-left: -6px;
+    color: rgba(00,00,00,0.3);
+}
+
+.plans {
+	background-color: transparent;
+    width: 450px;
+    margin: auto;
+    padding-top: 55px;
+    padding-bottom: 115px;
+    border-top: solid 1px #DECECE;
+    border-bottom: solid 1px #DECECE;
+}
+
+.plans-title {
+	font-size: 1.5em;
+    padding-bottom: 25px;
+}
+
+.plans-content {
+	width: 303px;
+	margin: auto;
+}
+
+.plans-box {
+	float: left;
+}
+
+.plans-box-value, .plans-box-add {
+    color: #DECECE;
+    background-color: #535358;
+    border: 0;
+    text-align: center;
+    width: 70px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.plans-box-add {
+    cursor: pointer;
+    padding: 0 5px 0px 5px;
+    margin-top: 10px;
+    padding-top: 0px;
+    margin-left: 3px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.plans-box-title {
+    width: 70px;
+    font-size: 12px;
+}
+
+.prices {
+    width: 650px;
+    height: 100px;
+    margin: auto;
+}
+
+.prices-content {
+	margin: auto;
+}
+
+.prices-box {
+	float: left;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.prices-title, .prices-value {
+	float: left;
+	width: 25%;
+}
+
+.prices-title {
+	padding-top: 50px;
+	font-size: 12px;
+	background-color: transparent;
+}
+
+.prices-value-small {
+	font-size: 12px;
+}
+
+.prices-value-big {
+	font-size: 2.5em;
+}
+
+@media only screen and (max-width: 900px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .prices {
+        width: 100vw;
+    }
+}

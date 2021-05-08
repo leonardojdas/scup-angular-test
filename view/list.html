@@ -1,0 +1,18 @@
+<div ng-show="isOpened">
+    <div class="ui-bg">
+        <div class="ui-alert">
+        <div class="ui-alert-close" ng-click="toggle()"></div>
+            <div class="ui-alert-content">
+                <table class="table table-striped" style="margin-bottom:0px;">
+                    <tr ng-repeat="detail in details track by $index">
+                        <td>
+                            <a href="" ng-click="toggle(); selected(detail.ddd)">
+                                {{detail.ddd + ' - ' + detail.city}}
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

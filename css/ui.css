@@ -1,0 +1,50 @@
+.ui-bg {
+    position: absolute;
+    background-color: rgba(00,00,00,0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+}
+
+.ui-alert {
+	width: 350px;
+    position: absolute;
+
+    top: 50%;
+    -webkit-transform: translateY( -50% );
+    -moz-transform: translateY( -50% );
+    transform: translateY( -50% );
+
+    margin-left: calc(50vw - 175px);
+
+	background-color: #FFFFFF;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.ui-alert-title, .ui-alert-message {
+	/*color: #AF4341;*/
+	text-align: center;
+}
+
+.ui-alert-content {
+	margin-bottom: 0px;
+}
+
+.ui-alert-close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ui-alert-close:after {
+	font-family: FontAwesome;
+	content: "\f00d";
+}

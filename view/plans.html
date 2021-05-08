@@ -1,0 +1,29 @@
+<div class="wrapper">
+
+    <div class="header" ng-include="'view/header.html'"></div>    
+
+    <div class="plans">
+        <div class="plans-content">
+            <div class="plans-title">Comparar Planos</div>
+            <div class="plans-box">
+                <div class="plans-box-title">Origem</div>
+                <input type="text" ng-model="from" class="plans-box-value" placeholder="DDD" disabled></input>
+                <span class="plans-box-add" ng-click="toggle(); setOrigin('from')">+</span>
+            </div>
+            <div class="plans-box">
+                <div class="plans-box-title">Destino</div>
+                <input type="text" ng-model="to" class="plans-box-value" placeholder="DDD" disabled></input>
+                <span class="plans-box-add" ng-click="toggle(); setOrigin('to')">+</span>
+            </div>
+            <div class="plans-box">
+                <div class="plans-box-title">Tempo</div>
+                <input type="text" class="plans-box-value" ng-model="minutes" placeholder="MM" maxlength="3" ui-number></input>
+            </div>
+        </div>
+    </div>
+    
+    <div ng-include="'view/list.html'"></div>
+
+    <div class="prices" ng-include="'view/prices.html'"></div>
+
+</div>
